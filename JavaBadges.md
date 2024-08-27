@@ -1,6 +1,7 @@
 ## Introduction
-https://www.hackerrank.com/challenges/welcome-to-java/problem?isFullScreen=true
+
 ### Welcome to Java!
+https://www.hackerrank.com/challenges/welcome-to-java/problem?isFullScreen=true
 ```java
 public class Solution {
 
@@ -11,6 +12,7 @@ public class Solution {
 }
 ```
 ### Java Stdin and Stdout I
+https://www.hackerrank.com/challenges/java-stdin-and-stdout-1/problem?isFullScreen=true
 ```java
 import java.util.*;
 
@@ -29,6 +31,7 @@ public class Solution {
 }
 ```
 ### Java IF-Else
+https://www.hackerrank.com/challenges/java-if-else/problem?isFullScreen=true
 ```java
 import java.io.*;
 import java.math.*;
@@ -64,6 +67,7 @@ if(N%2==0&&(N>20)){
 }
 ```
 ### Java Stdin and Stdout II
+https://www.hackerrank.com/challenges/java-stdin-stdout/problem?isFullScreen=true
 ```java
 import java.util.Scanner;
 
@@ -82,6 +86,7 @@ public class Solution {
 }
 ```
 ### Java Output Formatting
+https://www.hackerrank.com/challenges/java-output-formatting/problem?isFullScreen=true
 ```java
 import java.util.Scanner;
 
@@ -127,6 +132,7 @@ public class Solution {
 }
 ```
 ### LOOPS 1
+https://www.hackerrank.com/challenges/java-loops-i/problem?isFullScreen=true
 ```java
 import java.io.*;
 import java.math.*;
@@ -151,6 +157,7 @@ for(int i=1;i<=10;i++){
 }
 ```
 ### Loops 2
+https://www.hackerrank.com/challenges/java-loops/problem?isFullScreen=true
 ```java
 import java.util.*;
 import java.io.*;
@@ -177,18 +184,13 @@ class Solution{
 }
 ```
 ### DataTypes
+https://www.hackerrank.com/challenges/java-datatypes/problem?isFullScreen=true
 ```java
 import java.util.*;
 import java.io.*;
-
-
-
 class Solution{
     public static void main(String []argh)
     {
-
-
-
         Scanner sc = new Scanner(System.in);
         int t=sc.nextInt();
 
@@ -218,6 +220,7 @@ class Solution{
 }
 ```
 ### End-of-File
+https://www.hackerrank.com/challenges/java-end-of-file/problem?isFullScreen=true
 ```java
 import java.io.*;
 import java.util.*;
@@ -240,6 +243,7 @@ public class Solution {
 }
 ```
 ### Static Initializer Block
+https://www.hackerrank.com/challenges/java-static-initializer-block/problem?isFullScreen=true
 ```java
 import java.io.*;
 import java.util.*;
@@ -278,6 +282,7 @@ public static void main(String[] args){
 
 ```
 ### Java Int to String
+https://www.hackerrank.com/challenges/java-int-to-string/problem?isFullScreen=true
 ```java
 import java.util.*;
 import java.security.*;
@@ -328,6 +333,7 @@ class DoNotTerminate {
 }
 ```
 ### Java Date and Time
+https://www.hackerrank.com/challenges/java-date-and-time/problem?isFullScreen=true
 ```java
 import java.io.*;
 import java.math.*;
@@ -386,6 +392,7 @@ public class Solution {
 }
 ```
 ### Currency Formatter
+https://www.hackerrank.com/challenges/java-currency-formatter/problem?isFullScreen=true
 ```java
 import java.util.*;
 import java.text.*;
@@ -420,6 +427,7 @@ public class Solution {
 ## Strings
 
 ### String Introduction
+https://www.hackerrank.com/challenges/java-strings-introduction/problem?isFullScreen=true
 ```java
 import java.io.*;
 import java.util.*;
@@ -446,6 +454,7 @@ public class Solution {
 }
 ```
 ### Java SubString
+https://www.hackerrank.com/challenges/java-substring/problem?isFullScreen=true
 ```java
 import java.io.*;
 import java.util.*;
@@ -465,6 +474,7 @@ public class Solution {
 }
 ```
 ### Java Substring Comparision
+https://www.hackerrank.com/challenges/java-string-compare/problem?isFullScreen=true
 ```java
 import java.util.Scanner;
 
@@ -504,6 +514,7 @@ public class Solution {
 ```
 
 ### String Reverse
+https://www.hackerrank.com/challenges/java-string-reverse/problem?isFullScreen=true
 ```java
 import java.io.*;
 import java.util.*;
@@ -525,6 +536,7 @@ public class Solution {
 }
 ```
 ### Anagram
+https://www.hackerrank.com/challenges/java-anagrams/problem?isFullScreen=true
 ```java
 	import java.util.Scanner;
 
@@ -560,7 +572,7 @@ public class Solution {
 		}
  ```
 ### Java String Tokens
-
+https://www.hackerrank.com/challenges/java-string-tokens/problem?isFullScreen=true
 ```java
 import java.util.Scanner;
 
@@ -593,7 +605,7 @@ public class Solution {
 ```
 
 ### Pattern Syntax Checker
-
+https://www.hackerrank.com/challenges/pattern-syntax-checker/problem?isFullScreen=true
 ```java
 import java.util.Scanner;
 import java.util.regex.*;
@@ -619,7 +631,7 @@ public class Solution
 }
 ```
 ### Java Regex
-
+https://www.hackerrank.com/challenges/java-regex/problem?isFullScreen=true
 ```java
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -643,6 +655,7 @@ class MyRegex {
 }
 ```
 ### Valid Username Regular Expression
+https://www.hackerrank.com/challenges/valid-username-checker/problem?isFullScreen=true
 ```java
 import java.util.Scanner;
 class UsernameValidator {
@@ -671,6 +684,7 @@ public class Solution {
 }
 ```
 ### Tag Content Extractor
+https://www.hackerrank.com/challenges/tag-content-extractor/problem?isFullScreen=true
 ```java
 import java.util.*;
 import java.util.regex.*;
@@ -713,7 +727,7 @@ public class Solution {
 ## OOPS
 
 ### Java Inheritance |
-
+https://www.hackerrank.com/challenges/java-inheritance-1/problem?isFullScreen=true
 ```java
 import java.io.*;
 import java.util.*;
@@ -749,6 +763,7 @@ public class Solution{
 }
 ```
 ### Java Inheritance ||
+https://www.hackerrank.com/challenges/java-inheritance-2/problem?isFullScreen=true
 ```java
 import java.io.*;
 import java.util.*;
@@ -781,6 +796,7 @@ public class Solution{
 }
 ```
 ### Abstract Class
+https://www.hackerrank.com/challenges/java-abstract-class/problem?isFullScreen=true
 ```java
 	import java.util.*;
 	abstract class Book{
@@ -818,6 +834,7 @@ public class Solution{
 }
 ```
 ### Interface
+https://www.hackerrank.com/challenges/java-interface/problem?isFullScreen=true
 ```java
 import java.util.*;
 interface AdvancedArithmetic{
@@ -859,6 +876,7 @@ class Solution{
 
 ```
 ### Java Method Overriding
+https://www.hackerrank.com/challenges/java-method-overriding/problem?isFullScreen=true
 ```java
 import java.util.*;
 class Sports{
@@ -898,6 +916,7 @@ public class Solution{
 }
 ```
 ### Java Overriding 2
+https://www.hackerrank.com/challenges/java-method-overriding-2-super-keyword/problem?isFullScreen=true
 ```java
 import java.util.*;
 import java.io.*;
@@ -929,6 +948,7 @@ class Solution{
 }
 ```
 ### InstanceOf
+https://www.hackerrank.com/challenges/java-instanceof-keyword/problem?isFullScreen=true
 ```java
 import java.util.*;
 
@@ -970,6 +990,7 @@ public class InstanceOFTutorial{
 }
 ```
 ### Iterator
+https://www.hackerrank.com/challenges/java-iterator/problem?isFullScreen=true
 ```java
 import java.util.*;
 public class Main{
