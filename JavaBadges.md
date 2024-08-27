@@ -507,39 +507,194 @@ public class Solution {
 }
 ```
 ### Anagram
+```java
 	import java.util.Scanner;
 
-	public class Solution {
+		public class Solution {
 
-     static boolean isAnagram(String a, String b) {
-    if (a.length() != b.length()) return false;
+     	static boolean isAnagram(String a, String b) {
+	    if (a.length() != b.length()) return false;
+	
+	    a = a.toLowerCase();
+	    b = b.toLowerCase();
+	
+	    char[] arrayA = a.toCharArray();
+	    char[] arrayB = b.toCharArray();
+	
+	    java.util.Arrays.sort(arrayA);
+	    java.util.Arrays.sort(arrayB);
+	    for (int i = 0; i < arrayA.length; i++) {
+	        if (arrayA[i] != arrayB[i]) return false;
+	    }
+	
+	    return true;
+		}
+	
+	    public static void main(String[] args) {
+	    
+	        Scanner scan = new Scanner(System.in);
+	        String a = scan.next();
+	        String b = scan.next();
+	        scan.close();
+	        boolean ret = isAnagram(a, b);
+	        System.out.println( (ret) ? "Anagrams" : "Not Anagrams" );
+	    }
+		}
+ ```
+### Java String Tokens
 
-    a = a.toLowerCase();
-    b = b.toLowerCase();
+```java
+import java.util.Scanner;
 
-    char[] arrayA = a.toCharArray();
-    char[] arrayB = b.toCharArray();
-
-    java.util.Arrays.sort(arrayA);
-    java.util.Arrays.sort(arrayB);
-    for (int i = 0; i < arrayA.length; i++) {
-        if (arrayA[i] != arrayB[i]) return false;
-    }
-
-    return true;
-	}
+public class Solution {
 
     public static void main(String[] args) {
-    
         Scanner scan = new Scanner(System.in);
-        String a = scan.next();
-        String b = scan.next();
+        String s = scan.nextLine();
         scan.close();
-        boolean ret = isAnagram(a, b);
-        System.out.println( (ret) ? "Anagrams" : "Not Anagrams" );
+        
+        String[] tokens = s.split("[^A-Za-z]+");
+
+      
+        int tokenCount = 0;
+        for (String token : tokens) {
+            if (!token.isEmpty()) {
+                tokenCount++;
+            }
+        }
+        
+        System.out.println(tokenCount);
+        
+        for (String token : tokens) {
+            if (!token.isEmpty()) {
+                System.out.println(token);
+            }
+        }
     }
-	}```
- ### 
+}
+```
+
+### Pattern Syntax Checker
+
+```java
+import java.util.Scanner;
+import java.util.regex.*;
+
+public class Solution
+{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		int testCases = Integer.parseInt(in.nextLine());
+		while(testCases>0){
+			String pattern = in.nextLine();
+          	try{
+              Pattern.compile(pattern);
+              System.out.println("Valid");
+              }
+              catch(PatternSyntaxException e){
+                  System.out.println("Invalid");
+              }
+              testCases--;
+		}
+        in.close();
+	}
+}
+```
+### Java Regex
+
+```java
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.Scanner;
+
+class Solution{
+
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        while(in.hasNext()){
+            String IP = in.next();
+            System.out.println(IP.matches(new MyRegex().pattern));
+        }
+
+    }
+}
+
+class MyRegex {
+    // Regular expression to validate an IPv4 address
+    static String pattern = "^(0|[0-1][0-9]{0,2}|2[0-4][0-9]|25[0-5]|[1-9][0-9]?)(\\.(0|[0-1][0-9]{0,2}|2[0-4][0-9]|25[0-5]|[1-9][0-9]?)){3}$";
+}
+```
+### Valid Username Regular Expression
+```java
+import java.util.Scanner;
+class UsernameValidator {
+    /*
+     * Write regular expression here.
+     */
+    public static final String regularExpression = "^[a-zA-Z][a-zA-Z0-9_]{7,29}$";
+}
+
+
+public class Solution {
+    private static final Scanner scan = new Scanner(System.in);
+    
+    public static void main(String[] args) {
+        int n = Integer.parseInt(scan.nextLine());
+        while (n-- != 0) {
+            String userName = scan.nextLine();
+
+            if (userName.matches(UsernameValidator.regularExpression)) {
+                System.out.println("Valid");
+            } else {
+                System.out.println("Invalid");
+            }           
+        }
+    }
+}
+```
+### Tag Content Extractor
+```java
+import java.util.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int numberOfLines = scanner.nextInt();
+        scanner.nextLine(); 
+        for(int i = 0; i < numberOfLines; i++) { 
+            String inputLine = scanner.nextLine();
+           
+            String regex = "<([^<>]+)>([^<>]+)</\\1>";
+            Pattern pattern = Pattern.compile(regex);
+            Matcher matcher = pattern.matcher(inputLine);
+
+           
+            if(!matcher.find()) {
+                System.out.println("None");
+            }
+            
+          
+            matcher = pattern.matcher(inputLine);
+            while(matcher.find()) {
+                String matchedContent = matcher.group(2);
+              
+                Matcher nestedMatcher = pattern.matcher(matchedContent);
+                while(nestedMatcher.find()) {
+                    matchedContent = nestedMatcher.group(2);
+                    nestedMatcher = pattern.matcher(matchedContent);
+                }
+                
+                System.out.println(matchedContent);
+            }
+        }
+    }
+}
+```
+
+
+
+
 
 
 
