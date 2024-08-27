@@ -427,8 +427,119 @@ public class Solution {
     }
 }
 ```
+### Java SubString
+```java
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
 
+public class Solution {
 
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String S = in.next();
+        int start = in.nextInt();
+        int end = in.nextInt();
+        System.out.println(S.substring(start, end));
+    }
+}
+```
+### Java Substring Comparision
+```java
+import java.util.Scanner;
+
+public class Solution {
+
+     public static String getSmallestAndLargest(String s, int k) {
+  
+        String smallest = s.substring(0, k);
+        String largest = s.substring(0, k);
+        
+       
+        for (int i = 1; i <= s.length() - k; i++) {
+     
+            String substring = s.substring(i, i + k);
+            
+            
+            if (substring.compareTo(smallest) < 0) {
+                smallest = substring;
+            }
+            if (substring.compareTo(largest) > 0) {
+                largest = substring;
+            }
+        }
+        
+        return smallest + "\n" + largest;
+    }
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String s = scan.next();
+        int k = scan.nextInt();
+        scan.close();
+      
+        System.out.println(getSmallestAndLargest(s, k));
+    }
+}
+```
+
+### String Reverse
+```java
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        String rev="";
+        Scanner sc=new Scanner(System.in);
+        String A=sc.next();
+        for(int i=A.length()-1;i>=0;i--){
+            rev+=A.charAt(i);
+        }
+        if(rev.equals(A)){
+            System.out.println("Yes");
+        }else System.out.println("No");
+        
+    }
+}
+```
+### Anagram
+	import java.util.Scanner;
+
+	public class Solution {
+
+     static boolean isAnagram(String a, String b) {
+    if (a.length() != b.length()) return false;
+
+    a = a.toLowerCase();
+    b = b.toLowerCase();
+
+    char[] arrayA = a.toCharArray();
+    char[] arrayB = b.toCharArray();
+
+    java.util.Arrays.sort(arrayA);
+    java.util.Arrays.sort(arrayB);
+    for (int i = 0; i < arrayA.length; i++) {
+        if (arrayA[i] != arrayB[i]) return false;
+    }
+
+    return true;
+	}
+
+    public static void main(String[] args) {
+    
+        Scanner scan = new Scanner(System.in);
+        String a = scan.next();
+        String b = scan.next();
+        scan.close();
+        boolean ret = isAnagram(a, b);
+        System.out.println( (ret) ? "Anagrams" : "Not Anagrams" );
+    }
+	}```
+ ### 
 
 
 
